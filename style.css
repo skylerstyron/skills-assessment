@@ -1,0 +1,142 @@
+body {
+    margin: 5% auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    width: 400px;
+}
+
+.widget-header {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    height: 60px;
+    background: linear-gradient(#3e3e3e, #252525);
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding-left: 20px;
+}
+
+.contact-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-top: 2px solid #000;
+    background: #212121;
+}
+
+.left-column { 
+    width: 33%;
+    border-right: 2px solid #1d1d1d;
+    color: #fff;
+}
+
+.left-column, .right-column {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.availability {
+    width: .75em;
+    height: .75em;
+    background: #666;
+    border-radius: 50%;
+    float: left;
+    margin: 0 15px;
+}
+
+.available {
+    background: #37fe2c;
+}
+  
+.busy {
+    background: #fffc00;
+}
+  
+.offline {
+    background: #ff0000;
+}
+
+.right-column {
+    justify-content: center;
+    width: 65%;
+    text-align: left;
+    align-items: flex-start;
+    color: #565656;
+}
+
+.contact-inner {
+    padding-left: 30px;
+}
+
+.additional-info {
+    letter-spacing: 1px;
+    justify-content: left;
+    color: #fff;
+    width: 242px;
+    background-color: rgb(72, 72, 72);
+    position: relative;
+    top: 46.5px;
+    z-index: 1;
+    padding: 0.65rem;
+}
+
+.add-details, .contact-email {
+    text-align: left;
+    margin-left: 20px;
+}
+
+a {
+    color: #00f6ff;
+}
+
+.contact-row .right-column .additional-info, .contact-row:hover .right-column .contact-info {
+    display: none;
+}
+
+.contact-row:hover .right-column .additional-info {
+    display: block;
+    background-color: rgb(72, 72, 72);
+}
+
+.contact-row:hover .left-column, .contact-row:hover .right-column {
+    background-color: rgb(72, 72, 72);
+    border: none;
+}
+
+.contact-row:hover .right-column {
+    background-color: rgb(72, 72, 72);
+}
+
+/* .contact-row:hover .right-column .contact-info {
+    display: none;
+} */
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #202020;
+    border-top: 2px solid #000;
+    border-radius: 0 0 10px 10px;
+}
+
+.contact-method {
+    margin-right: 20px;
+    flex: 0.35;
+    align-self: flex-end;
+    padding: 3px;
+    font-size: 14px;
+}
